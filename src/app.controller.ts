@@ -1,7 +1,8 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 
-@Controller()
+// controller控制的是http请求
+@Controller('app')
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
